@@ -3,6 +3,7 @@
 	"packageManager": "yarn@3.2.4",
 	"scripts": {
 		"build": "node deploy.js",
+		"encrypt": "node encryptKey.js",
 		"compile": "yarn solcjs --bin --abi --include-path .yarn/ --base-path . -o . SimpleStorage.sol"
 	},
 	"dependencies": {

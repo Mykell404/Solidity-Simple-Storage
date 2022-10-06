@@ -24,17 +24,18 @@ contract SimpleStorage {
         return hasFavoriteNumber;
     }
 
-    // function addPerson(string memory _name, uint256 _favoriteNumber) public {
-    //     people.push(People(_favoriteNumber, _name));
-    //     nameToFavoriteNumber[_name] = _favoriteNumber;
-    // }
+    function addPerson(string memory _name, uint256 _favoriteNumber) public {
+        people.push(People(_favoriteNumber, _name));
+        nameToFavoriteNumber[_name] = _favoriteNumber;
+    }
 
-    // function removePerson() public {
-    //     people.pop();
-    // }
-    // function lengthArr() public view returns(uint256){
-    //     return people.length;
-    // }
+    function removePerson() public {
+        people.pop();
+    }
+
+    function lengthArr() public view returns (uint256) {
+        return people.length;
+    }
 
     // calldata, memory, storage
 }

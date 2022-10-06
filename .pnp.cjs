@@ -28,6 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["dotenv", "npm:16.0.3"],\
             ["ethers", "npm:5.7.1"],\
             ["fs-extra", "npm:10.1.0"],\
             ["solc", "npm:0.8.7-fixed"]\
@@ -558,6 +559,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["dotenv", [\
+        ["npm:16.0.3", {\
+          "packageLocation": "./.yarn/cache/dotenv-npm-16.0.3-4cc29121dc-afcf03f373.zip/node_modules/dotenv/",\
+          "packageDependencies": [\
+            ["dotenv", "npm:16.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["elliptic", [\
         ["npm:6.5.4", {\
           "packageLocation": "./.yarn/cache/elliptic-npm-6.5.4-0ca8204a86-d56d21fd04.zip/node_modules/elliptic/",\
@@ -618,6 +628,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["ethers-simple-storage", "workspace:."],\
+            ["dotenv", "npm:16.0.3"],\
             ["ethers", "npm:5.7.1"],\
             ["fs-extra", "npm:10.1.0"],\
             ["solc", "npm:0.8.7-fixed"]\
